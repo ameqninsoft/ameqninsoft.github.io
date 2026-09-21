@@ -27,12 +27,12 @@
 <main>
 
 <h1>AMP – AMEQNIN Music Player</h1>
-<p class="muted">Privacy Policy &middot; Last updated: 20 September 2026</p>
+<p class="muted">Privacy Policy &middot; Last updated: 21 September 2026</p>
 
 <div class="box">
   <strong>In short.</strong> AMP plays the music files that are already on your phone. It has no account
   and no server of its own. Your library, playlists and favourites stay on your device. The app only
-  contacts a few third-party services to find album covers and lyrics, and it shows ads through
+  contacts a few third-party services to find song lyrics, and it shows ads through
   Google AdMob. Details below.
 </div>
 
@@ -48,7 +48,7 @@
 <p>The following is processed and stored <strong>only on your phone</strong> and is never sent to us:</p>
 <ul>
   <li>the list of audio files found on your device (title, artist, album, genre, duration, file name and path);</li>
-  <li>embedded cover art;</li>
+  <li>cover art (the one embedded in your files and any cover you pick yourself from your files or photos);</li>
   <li>your playlists, favourites, listening statistics, saved A-B loops, equalizer presets and app settings;</li>
   <li>the last song and position, and the playback queue, so playback can resume.</li>
 </ul>
@@ -63,28 +63,18 @@
   <tr><td>Music and audio (read)</td><td>To find and play the songs stored on your phone. Required.</td></tr>
   <tr><td>Notifications</td><td>To show playback controls in the notification, on the lock screen and with Bluetooth or headset buttons. Optional.</td></tr>
   <tr><td>Microphone</td><td>Only to animate the music visualizer with the sound being played. Nothing is recorded or stored. Optional.</td></tr>
-  <tr><td>Internet</td><td>To look up covers and lyrics (section 4) and to display ads (section 5).</td></tr>
+  <tr><td>Internet</td><td>To look up lyrics (section 4) and to display ads (section 5).</td></tr>
 </table>
 <p>You can change these permissions at any time in Android Settings &rsaquo; Apps &rsaquo; AMP.</p>
 
 <h2>4. Requests sent to third-party services</h2>
 <p>
-  To find covers and lyrics, AMP sends short text queries to the services below. Like any internet request,
+  To find lyrics, AMP sends short text queries to the services below. AMP does not download album covers from the internet. Like any internet request,
   they also receive your IP address and the app's user-agent (<code>AMEQNIN-Music-Player-android/1.0</code>).
   We do not send your files, your playlists or any account identifier, because we do not have any.
 </p>
 <table>
   <tr><th>Service</th><th>Purpose</th><th>Data sent</th></tr>
-  <tr>
-    <td>Apple iTunes Search API<br><a href="https://www.apple.com/legal/privacy/">Privacy policy</a></td>
-    <td>Find an album cover when a file has none embedded</td>
-    <td>Artist and title of the song (cleaned of track numbers and similar)</td>
-  </tr>
-  <tr>
-    <td>Deezer API<br><a href="https://www.deezer.com/legal/personal-datas">Privacy policy</a></td>
-    <td>Fallback source for covers</td>
-    <td>Artist and title of the song</td>
-  </tr>
   <tr>
     <td>LRCLIB<br><a href="https://lrclib.net">lrclib.net</a></td>
     <td>Find lyrics when you open the lyrics screen</td>
@@ -99,11 +89,11 @@
 <div class="box">
   <strong>You are in control.</strong> These lookups can be turned off at any time with the
   <em>Online lookups</em> switch in the app (Tune menu). When it is off, AMP sends none of the requests in this
-  section; covers already saved on your device are still shown.
+  section.
 </div>
 <p>
-  Covers that are found are kept in the app's cache on your device so that the same request is not repeated.
-  Clearing the app's cache removes them.
+  Covers you pick yourself (from your files or photos) stay on your device: they are written into the
+  file's tag after you approve the system prompt, or kept in AMP's private storage.
 </p>
 
 <h2>5. Advertising</h2>

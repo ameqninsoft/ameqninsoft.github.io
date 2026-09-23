@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMP – Impressum / Legal Notice</title>
+<style>
+  :root { --bg:#fff; --fg:#1b1b1f; --muted:#5d5d66; --line:#dcdce3; --accent:#5b48d6; --card:#f5f4fb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111116; --fg:#ececf1; --muted:#a6a6b2; --line:#2c2c36; --accent:#a99bff; --card:#1a1a22; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  h2 { font-size:1.25rem; margin:36px 0 8px; padding-top:8px; border-top:1px solid var(--line); }
+  h3 { font-size:1.05rem; margin:20px 0 6px; }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); }
+  .box { background:var(--card); border-radius:12px; padding:12px 16px; margin:12px 0; }
+  .lang-block { margin-top:8px; }
+  hr.section { border:none; border-top:1px solid var(--line); margin:48px 0; }
+  label { display:block; font-size:.9rem; color:var(--muted); margin:14px 0 4px; }
+  input, textarea { width:100%; box-sizing:border-box; padding:10px 12px; border-radius:8px; border:1px solid var(--line); background:var(--card); color:var(--fg); font:inherit; }
+  textarea { min-height:110px; resize:vertical; }
+  button { margin-top:16px; padding:11px 22px; border:none; border-radius:999px; background:var(--accent); color:#fff; font:inherit; font-weight:600; cursor:pointer; }
+  button:hover { opacity:.92; }
+  .contact-status { font-size:.9rem; color:var(--muted); margin-top:10px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>AMP – AMEQNIN Music Player</h1>
+<p class="muted">Impressum / Legal Notice</p>
+
+<div class="box">
+  <strong>Deutsch</strong>
+  <div class="lang-block">
+    <h3>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h3>
+    <p>
+      Ilies Khatib<br>
+      Im Dammwald 18<br>
+      61381 Friedrichsdorf<br>
+      Deutschland
+    </p>
+
+    <h3>Kontakt</h3>
+    <p>
+      E-Mail: <a href="mailto:ameqninsoft@gmail.com">ameqninsoft@gmail.com</a><br>
+      Oder über das <a href="#kontaktformular">Kontaktformular</a> weiter unten auf dieser Seite.
+    </p>
+
+    <h3>Haftungsausschluss</h3>
+    <p>
+      Die App &bdquo;AMP &ndash; AMEQNIN Music Player&ldquo; wird von einer Einzelperson entwickelt und kostenlos
+      angeboten. Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer
+      Links; für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+    </p>
+    <p>
+      Plattform der EU-Kommission zur Online-Streitbeilegung:
+      <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.
+      Ich bin nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer
+      Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+  </div>
+</div>
+
+<div class="box">
+  <strong>English</strong>
+  <div class="lang-block">
+    <h3>Information according to § 5 DDG (German Digital Services Act)</h3>
+    <p>
+      Ilies Khatib<br>
+      Im Dammwald 18<br>
+      61381 Friedrichsdorf<br>
+      Germany
+    </p>
+
+    <h3>Contact</h3>
+    <p>
+      Email: <a href="mailto:ameqninsoft@gmail.com">ameqninsoft@gmail.com</a><br>
+      Or use the <a href="#kontaktformular">contact form</a> below on this page.
+    </p>
+
+    <h3>Disclaimer</h3>
+    <p>
+      &ldquo;AMP &ndash; AMEQNIN Music Player&rdquo; is developed by an individual and offered free of charge.
+      Despite careful content review, I assume no liability for the content of external links; the operators of
+      the linked pages are solely responsible for their content.
+    </p>
+    <p>
+      European Commission platform for online dispute resolution:
+      <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.
+      I am not obliged and not willing to take part in dispute resolution proceedings before a consumer
+      arbitration board.
+    </p>
+  </div>
+</div>
+
+<hr class="section">
+
+<h2 id="kontaktformular">Kontaktformular / Contact form</h2>
+<p class="muted">
+  Öffnet Ihr eigenes E-Mail-Programm mit einer vorausgefüllten Nachricht &mdash; nichts wird an einen Drittanbieter
+  gesendet oder gespeichert.<br>
+  Opens your own email app with a pre-filled message &mdash; nothing is sent to or stored by any third party.
+</p>
+
+<form id="contact-form">
+  <label for="cf-name">Name</label>
+  <input type="text" id="cf-name" required>
+
+  <label for="cf-email">E-Mail / Email</label>
+  <input type="email" id="cf-email" required>
+
+  <label for="cf-message">Nachricht / Message</label>
+  <textarea id="cf-message" required></textarea>
+
+  <button type="submit">Send / Senden</button>
+  <div class="contact-status" id="cf-status"></div>
+</form>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('cf-name').value.trim();
+    var email = document.getElementById('cf-email').value.trim();
+    var message = document.getElementById('cf-message').value.trim();
+    var subject = 'AMP contact form — ' + name;
+    var body = message + '\n\n— ' + name + ' (' + email + ')';
+    var url = 'mailto:ameqninsoft@gmail.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+    window.location.href = url;
+    document.getElementById('cf-status').textContent =
+      'Opening your email app… / Ouverture de votre application e-mail…';
+  });
+</script>
+
+<hr class="section">
+
+<p class="muted">
+  <a href="privacy.html">&larr; Privacy Policy</a>
+</p>
+
+</main>
+</body>
+</html>
